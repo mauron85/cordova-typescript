@@ -1,3 +1,5 @@
+import BackgroundGeolocation from 'cordova-plugin-mauron85-background-geolocation';
+
 // For an introduction to the Blank template, see the following documentation:
 // http://go.microsoft.com/fwlink/?LinkID=397705
 // To debug code on page load in Ripple or on Android devices/emulators: launch your app, set breakpoints, 
@@ -20,6 +22,7 @@ namespace TypeScriptGreeter {
             document.addEventListener('resume', onResume, false);
 
             // TODO: Cordova has been loaded. Perform any initialization that requires Cordova here.
+            BackgroundGeolocation.start();
         }
 
         function onPause() {
